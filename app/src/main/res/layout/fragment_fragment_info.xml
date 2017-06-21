@@ -1,0 +1,79 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#1EA39E"
+    tools:context="com.example.estefania.willyfoggy.FragmentInfo">
+
+    <!-- TODO: Update blank fragment layout -->
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:orientation="vertical"
+        android:background="#ffffff">
+
+        <ImageView
+            android:layout_width="200dp"
+            android:layout_height="200dp"
+            android:src="@drawable/icono"
+            android:layout_gravity="center"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/nombre_app"
+            android:text="WILLY FOGGY"
+            android:textColor="#000000"
+            android:layout_gravity="center"
+            android:textSize="40dp"
+            android:layout_marginBottom="40dp"
+            android:layout_marginTop="12dp"
+            />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="12dp"
+            android:textColor="#000000"
+            android:gravity="center_horizontal"
+            android:text="Aplicación creada por Estefanía Martín Rojas, estudiante de la Universidad de Alcalá de Henares de Madrid, España, como proyecto de la asignatura Fundamentos de los Sistemas de Información."/>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center">
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:orientation="horizontal"
+                android:layout_gravity="center">
+
+                <ImageButton
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:src="@drawable/ic_share_black_48dp"
+                    android:background="@android:color/transparent"
+                    android:layout_marginRight="90dp"
+                    android:onClick="compartirEnRRSS"
+                    />
+
+                <ImageButton
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:src="@drawable/ic_email_black_48dp"
+                    android:background="@android:color/transparent"
+                    android:onClick="enviarEmail"/>
+
+
+
+            </LinearLayout>
+
+
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+
+</FrameLayout>
