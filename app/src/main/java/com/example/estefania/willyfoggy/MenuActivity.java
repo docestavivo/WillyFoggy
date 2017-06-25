@@ -143,7 +143,7 @@ public class MenuActivity extends AppCompatActivity
     public void compartirEnRRSS (View v){
         Intent intent = new Intent(Intent.ACTION_SEND);
         intent.setType("text/plain");
-        intent.putExtra(Intent.EXTRA_TEXT, "Willy Foggy, la nueva app para descubrir lugares ocultos estés dónde estes. Descargala en: ");
+        intent.putExtra(Intent.EXTRA_TEXT, "Willy Foggy, la nueva manera de conocer lo que te rodea. Descargala en: ");
         startActivity(Intent.createChooser(intent, "Share with"));
     }
 
